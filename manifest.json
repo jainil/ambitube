@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Ambient Theatre Mode for Youtube",
+  "version": "1.0.0",
+  "description": "Ambient lighting for Youtube theatre mode",
+  "icons": {
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Toggle Ambient Theatre Mode"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "ambitube.css"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
