@@ -24,6 +24,8 @@ Installing the extension from source code will not automatically update the exte
 # movie_player
 ```
 
-1. try to avoid js
-2. is ambient mode still active in full-bleed-container but just hidden?
-3. if not make a js switch to add a custom class for mods
+## Tasks
+
+1. TODO Fix theatre mode conflicts
+2. TODO Ensure some horizontal padding in full screen mode
+3. TODO Fix seek bar sizing when the video has chapters
