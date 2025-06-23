@@ -27,5 +27,4 @@ Installing the extension from source code will not automatically update the exte
 ## Tasks
 
 1. TODO Fix theatre mode conflicts
-2. TODO Ensure some horizontal padding in full screen mode
-3. TODO Fix seek bar sizing when the video has chapters
+2. TODO Fix seek bar sizing when the video has chapters

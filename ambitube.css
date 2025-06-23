@@ -1,4 +1,7 @@
 .ambitube-enabled {
+  --ambitube-width: min(calc(1.77*90vh), 95vw);
+  --ambitube-height: calc(var(--ambitube-width)/1.77);
+
   #page-manager {
     margin-top: 0 !important;
   }
@@ -16,28 +19,26 @@
   }
 
   #player-container-inner {
-    padding-top: 90vh !important;
-    width: calc(1.77*90vh) !important;
+    padding-top: var(--ambitube-height) !important;
+    width: var(--ambitube-width) !important;
   }
 
   video {
-    height: 90vh !important;
-    width: calc(1.77*90vh) !important;
+    height: var(--ambitube-height) !important;
+    width: var(--ambitube-width) !important;
   }
 
   .ytp-chrome-bottom {
-    width: calc(1.77*90vh) !important;
-    left: 0 !important;
+    width: var(--ambitube-width) !important;
   }
 
   #primary {
     flex-basis: 1 !important;
-    margin-left: 0 !important;
-    padding-top: 5vh !important;
+    padding-top: calc((100vh - var(--ambitube-height))/2) !important;
     max-width: unset !important;
   }
 
   #player-container-outer {
-    max-width: calc(1.77*90vh) !important;
+    max-width: var(--ambitube-width) !important;
   }
 }
