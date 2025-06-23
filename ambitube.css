@@ -1,4 +1,4 @@
-.ambitube-enabled ytd-watch-flexy[theater] #player-full-bleed-container.ytd-watch-flexy,
+/* .ambitube-enabled ytd-watch-flexy[theater] #player-full-bleed-container.ytd-watch-flexy,
 .ambitube-enabled ytd-watch-grid[theater] #player-full-bleed-container.ytd-watch-grid {
   height: 100vh !important;
   max-height: calc(100vh - 56px) !important;
@@ -14,4 +14,48 @@
 .ambitube-enabled ytd-watch-grid[full-bleed-player] #full-bleed-container.ytd-watch-grid {
   block-size: fit-content !important;
   max-height: fit-content !important;
+} */
+
+.ambitube-enabled {
+  #page-manager {
+    margin-top: 0 !important;
+  }
+
+  #secondary {
+    display: none !important;
+  }
+
+  #masthead-container {
+    display: none !important;
+  }
+
+  #below {
+    display: none !important;
+  }
+
+  #player-container-inner {
+    padding-top: 90vh !important;
+    width: calc(1.77*90vh) !important;
+  }
+
+  video {
+    height: 90vh !important;
+    width: calc(1.77*90vh) !important;
+  }
+
+  .ytp-chrome-bottom {
+    width: calc(1.77*90vh) !important;
+    left: 0 !important;
+  }
+
+  #primary {
+    flex-basis: 1 !important;
+    margin-left: 0 !important;
+    padding-top: 5vh !important;
+    max-width: unset !important;
+  }
+
+  #player-container-outer {
+    max-width: calc(1.77*90vh) !important;
+  }
 }
