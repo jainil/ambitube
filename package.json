@@ -1,0 +1,22 @@
+{
+  "name": "ambitube",
+  "version": "1.0.0",
+  "description": "A lightweight chrome extension that makes a few simple changes in YouTube's CSS to force theatre mode to expand vertically, making use of all the available height.",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "zip -r ambitube.zip . -x \"node_modules/*\" -x \"ambitube.zip\" -x \".*\" -x \".*/**\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainil/ambitube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jainil/ambitube/issues"
+  },
+  "homepage": "https://github.com/jainil/ambitube#readme"
+}
