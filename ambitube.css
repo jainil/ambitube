@@ -43,36 +43,22 @@
   }
 }
 
-
-.ambitube-enabled ytd-watch-flexy[theater] #player-full-bleed-container.ytd-watch-flexy,
-.ambitube-enabled ytd-watch-grid[theater] #player-full-bleed-container.ytd-watch-grid {
+/* Theatre Mode O */
+.ambitube-enabled ytd-watch-flexy[theater] #player-full-bleed-container {
   height: 100vh !important;
-}
-
-.ambitube-enabled ytd-watch-flexy[fullscreen] #player-full-bleed-container.ytd-watch-flexy,
-.ambitube-enabled ytd-watch-grid[fullscreen] #player-full-bleed-container.ytd-watch-grid {
   max-height: 100vh !important;
   min-height: 100vh !important;
 }
 
-.ambitube-enabled ytd-watch-flexy[full-bleed-player] #full-bleed-container.ytd-watch-flexy,
-.ambitube-enabled ytd-watch-grid[full-bleed-player] #full-bleed-container.ytd-watch-grid {
-  block-size: fit-content !important;
-  max-height: fit-content !important;
-}
-
-.ambitube-enabled #full-bleed-container {
+.ambitube-enabled ytd-watch-flexy[theater] #full-bleed-container {
   --ambitube-width: min(calc(1.77*100vh), 95vw);
   --ambitube-height: calc(var(--ambitube-width)/1.77);
+
+  block-size: fit-content !important;
+  max-height: fit-content !important;
 
   video {
     height: var(--ambitube-height) !important;
     width: var(--ambitube-width) !important;
   }
-
-  /* #player-full-bleed-container {
-    height: 100vh !important;
-    block-size: fit-content !important;
-    max-height: fit-content !important;
-  } */
 }
