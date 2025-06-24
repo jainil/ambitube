@@ -36,8 +36,8 @@
 
   #primary {
     flex-basis: 1 !important;
-    margin-top: calc((100vh - var(--ambitube-height))/2) !important;
-    padding-top: 0 !important;
+    padding-top: calc((100vh - var(--ambitube-height))/2) !important;
+    /* padding-top: 0 !important; */
     max-width: unset !important;
   }
 
@@ -60,8 +60,18 @@
   block-size: fit-content !important;
   max-height: fit-content !important;
 
+  #primary {
+    margin-top: 0 !important;
+  }
+
   video {
     height: var(--ambitube-height) !important;
+    width: var(--ambitube-width) !important;
+    left: calc((100vw - var(--ambitube-width))/2) !important;
+    top: 0 !important;
+  }
+
+  .ytp-chrome-bottom {
     width: var(--ambitube-width) !important;
   }
 }
