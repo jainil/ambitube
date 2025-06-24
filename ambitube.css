@@ -2,6 +2,8 @@
   --ambitube-width: min(calc(1.77*90vh), 95vw);
   --ambitube-height: calc(var(--ambitube-width)/1.77);
 
+  overflow: hidden;
+
   #page-manager {
     margin-top: 0 !important;
   }
@@ -34,7 +36,8 @@
 
   #primary {
     flex-basis: 1 !important;
-    padding-top: calc((100vh - var(--ambitube-height))/2) !important;
+    margin-top: calc((100vh - var(--ambitube-height))/2) !important;
+    padding-top: 0 !important;
     max-width: unset !important;
   }
 
